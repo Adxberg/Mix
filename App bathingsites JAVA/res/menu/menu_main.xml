@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="se.anbe1507miun.bathingsites.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="1"
+        android:title="@string/action_settings"
+        app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/settingUrl"
+                android:title="@string/setting_url" />
+
+            <item android:id="@+id/settingWeb"
+                android:title="@string/setting_weburl" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/action_download"
+        android:orderInCategory="2"
+        android:title="@string/action_download"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Bathing Sites</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_bathing_site">New Bathing Site</string>
+    <string name="action_clear">clear</string>
+    <string name="action_save">save</string>
+    <string name="weather">Weather</string>
+    <string name="name">Name:</string>
+    <string name="date_of_temp">Date of temp:</string>
+    <string name="grade">Grade:</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude:</string>
+    <string name="adress">Adress:</string>
+    <string name="description">Description:</string>
+    <string name="ok">OK</string>
+    <string name="water_temp">Water Temp:</string>
+    <string name="Current">Current Weather</string>
+    <string name="download">Downloading current weather</string>
+    <string name="progress">Loading...</string>
+    <string name="degree">° C</string>
+    <string name="OK">OK</string>
+    <string name="only">numbers only!</string>
+    <string name="Saved">Saved</string>
+    <string name="source">Weathersource</string>
+    <string name="change">http://dt031g.programvaruteknik.nu/badplatser/weather.php</string>
+    <string name="exists">Bathingsite is already saved</string>
+    <string name="bathingsites">BATHINGSITES</string>
+    <string name="action_download">Download</string>
+    <string name="setting_url">Setting url for weather</string>
+    <string name="setting_weburl">Setting url for downloading files</string>
+    <string name="websource">WebSource</string>
+    <string name="loadfile">Downloading file</string>
+    <string name="title_activity_download_web_view">DownloadWebView</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weburl">weburl</string>
+    <string name="donwloadingfiles">Change url for downloading files</string>
+    <string name="weatherurl">weatherurl</string>
+    <string name="searchweather">Change url for weathersearch</string>
+    <string name="downloadingdefault">http://dt031g.programvaruteknik.nu/badplatser/koordinater-utf8/</string>
+    <string name="webdefault">http://dt031g.programvaruteknik.nu/badplatser/weather.php</string>
+</resources>

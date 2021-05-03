@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.anbe1507miun.bathingsites.NewBathingSiteFragment"
+    tools:showIn="@layout/activity_new_bathing_site"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/longitude"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adress"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/latitude"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adress"
+        android:layout_toEndOf="@+id/longitude"
+        android:layout_toRightOf="@+id/longitude"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_margin="5dp"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:progressTint="@color/yellow"
+        android:layout_below="@id/longitude"
+        android:layout_margin="15dp"/>
+    <!--rate_bar.setRating(Float.parseFloat("2.0"));-->
+
+    <EditText
+        android:id="@+id/watertemp"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/dateoftemp"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_toEndOf="@+id/watertemp"
+        android:layout_toRightOf="@+id/watertemp"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/headName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/headDescription"
+        android:layout_alignStart="@+id/headDescription" />
+
+    <TextView
+        android:id="@+id/headDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:layout_above="@+id/description"
+        android:layout_alignLeft="@+id/description"
+        android:layout_alignStart="@+id/description" />
+
+    <TextView
+        android:id="@+id/headAdress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adress"
+        android:layout_below="@+id/description"
+        android:layout_alignLeft="@+id/description"
+        android:layout_alignStart="@+id/description" />
+
+    <TextView
+        android:id="@+id/headLongitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/longitude"
+        android:layout_below="@+id/adress"
+        android:layout_alignLeft="@+id/adress"
+        android:layout_alignStart="@+id/adress" />
+
+    <TextView
+        android:id="@+id/headLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/latitude"
+        android:layout_below="@+id/adress"
+        android:layout_alignLeft="@+id/latitude"
+        android:layout_alignStart="@+id/latitude" />
+
+    <TextView
+        android:id="@+id/headRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/longitude"
+        android:layout_alignStart="@+id/longitude"
+        android:layout_above="@id/ratingBar"
+        android:layout_centerVertical="true"
+        android:text="@string/grade" />
+
+    <TextView
+        android:id="@+id/headTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:text="@string/water_temp"
+        android:layout_alignBottom="@+id/headDate" />
+
+    <TextView
+        android:id="@+id/headDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dateoftemp"
+        android:layout_alignStart="@+id/dateoftemp"
+        android:layout_below="@+id/ratingBar"
+        android:text="@string/date_of_temp" />
+
+</RelativeLayout>
